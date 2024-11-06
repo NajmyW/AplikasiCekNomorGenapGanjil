@@ -230,11 +230,11 @@ public class CekNomorView extends javax.swing.JFrame {
 
         // Check if number is even or odd
         String resultBilangan = (number % 2 == 0) ? "Genap" : "Ganjil";
-        String primeResult = isPrime(number) ? " (Bilangan Prima)" : " (Bilangan Bukan Prima)";
+        String primeResult = isPrime(number) ? " Bilangan Prima" : " Bilangan Bukan Prima";
 
         // Display result
-        cekAngka.setText("Angka " + number + " adalah " + resultBilangan);
-        cekPrima.setText("Angka " + number + " adalah " + primeResult);
+        cekAngka.setText("Angka " + number + " adalah Bilangan " + resultBilangan);
+        cekPrima.setText("Angka " + number + " " + primeResult);
     }
     /**
      * @param args the command line arguments
