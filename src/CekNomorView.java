@@ -33,12 +33,14 @@ public class CekNomorView extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        inputAngka = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        cekAngka = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        inputAngka = new javax.swing.JTextField();
+        cekAngka = new javax.swing.JTextField();
+        cekPrima = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,44 +54,21 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(8, 8, 8, 8);
-        jPanel2.add(jLabel1, gridBagConstraints);
-
-        inputAngka.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                inputAngkaKeyTyped(evt);
-            }
-        });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 7;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(8, 8, 8, 8);
-        jPanel2.add(inputAngka, gridBagConstraints);
+        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
+        jPanel2.add(jLabel1, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setText("Hasil :");
+        jLabel4.setText("Prima :");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridy = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.ipady = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
-        gridBagConstraints.insets = new java.awt.Insets(8, 8, 8, 8);
+        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         jPanel2.add(jLabel4, gridBagConstraints);
-
-        cekAngka.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 7;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_START;
-        gridBagConstraints.insets = new java.awt.Insets(8, 8, 8, 8);
-        jPanel2.add(cekAngka, gridBagConstraints);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Cek");
@@ -100,11 +79,11 @@ public class CekNomorView extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipadx = 2;
-        gridBagConstraints.ipady = 8;
-        gridBagConstraints.insets = new java.awt.Insets(16, 0, 16, 0);
+        gridBagConstraints.ipady = 13;
+        gridBagConstraints.insets = new java.awt.Insets(18, 2, 18, 2);
         jPanel2.add(jButton2, gridBagConstraints);
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -116,11 +95,11 @@ public class CekNomorView extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipadx = 2;
-        gridBagConstraints.ipady = 8;
-        gridBagConstraints.insets = new java.awt.Insets(16, 0, 16, 0);
+        gridBagConstraints.ipady = 13;
+        gridBagConstraints.insets = new java.awt.Insets(18, 2, 18, 2);
         jPanel2.add(jButton3, gridBagConstraints);
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -132,23 +111,65 @@ public class CekNomorView extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridy = 9;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipadx = 2;
-        gridBagConstraints.ipady = 8;
-        gridBagConstraints.insets = new java.awt.Insets(16, 0, 16, 0);
+        gridBagConstraints.ipady = 13;
+        gridBagConstraints.insets = new java.awt.Insets(18, 2, 18, 2);
         jPanel2.add(jButton4, gridBagConstraints);
+
+        inputAngka.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                inputAngkaKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
+        jPanel2.add(inputAngka, gridBagConstraints);
+
+        cekAngka.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        cekAngka.setEnabled(false);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
+        jPanel2.add(cekAngka, gridBagConstraints);
+
+        cekPrima.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        cekPrima.setEnabled(false);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
+        jPanel2.add(cekPrima, gridBagConstraints);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setText("Bilangan :");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.ipady = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
+        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
+        jPanel2.add(jLabel5, gridBagConstraints);
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
         
-    private void inputAngkaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_inputAngkaKeyTyped
-        // TODO add your handling code here:
-        filterKeyTyped(evt);
-    }//GEN-LAST:event_inputAngkaKeyTyped
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String angka = inputAngka.getText();
@@ -159,6 +180,7 @@ public class CekNomorView extends javax.swing.JFrame {
         // TODO add your handling code here:
         inputAngka.setText("");
         cekAngka.setText("");
+        cekPrima.setText("");
         inputAngka.requestFocus();
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -166,6 +188,11 @@ public class CekNomorView extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void inputAngkaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_inputAngkaKeyTyped
+        // TODO add your handling code here:
+        filterKeyTyped(evt);
+    }//GEN-LAST:event_inputAngkaKeyTyped
 
       private boolean isPrime(int number) {
         if (number < 2) return false;
@@ -206,7 +233,8 @@ public class CekNomorView extends javax.swing.JFrame {
         String primeResult = isPrime(number) ? " (Bilangan Prima)" : " (Bilangan Bukan Prima)";
 
         // Display result
-        cekAngka.setText("Angka " + number + " adalah " + resultBilangan + primeResult);
+        cekAngka.setText("Angka " + number + " adalah " + resultBilangan);
+        cekPrima.setText("Angka " + number + " adalah " + primeResult);
     }
     /**
      * @param args the command line arguments
@@ -244,13 +272,15 @@ public class CekNomorView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel cekAngka;
+    private javax.swing.JTextField cekAngka;
+    private javax.swing.JTextField cekPrima;
     private javax.swing.JTextField inputAngka;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
