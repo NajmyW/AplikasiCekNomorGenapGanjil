@@ -91,6 +91,7 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(8, 8, 8, 8);
         jPanel2.add(cekAngka, gridBagConstraints);
 
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Cek");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,6 +107,7 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 16, 0);
         jPanel2.add(jButton2, gridBagConstraints);
 
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Hapus");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,6 +123,7 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 16, 0);
         jPanel2.add(jButton3, gridBagConstraints);
 
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton4.setText("Keluar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
