@@ -44,11 +44,12 @@ public class CekNomorView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(0, 255, 153));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Aplikasi Cek Nomor Genap/Ganjil", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Aplikasi Cek Nomor Genap/Ganjil", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18), new java.awt.Color(255, 255, 0))); // NOI18N
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Masukan Angka :");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -60,6 +61,7 @@ public class CekNomorView extends javax.swing.JFrame {
         jPanel2.add(jLabel1, gridBagConstraints);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Prima :");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -118,6 +120,7 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(18, 2, 18, 2);
         jPanel2.add(jButton4, gridBagConstraints);
 
+        inputAngka.setBackground(new java.awt.Color(204, 204, 0));
         inputAngka.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 inputAngkaKeyTyped(evt);
@@ -132,6 +135,7 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         jPanel2.add(inputAngka, gridBagConstraints);
 
+        cekAngka.setBackground(new java.awt.Color(204, 204, 0));
         cekAngka.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         cekAngka.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -143,6 +147,7 @@ public class CekNomorView extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         jPanel2.add(cekAngka, gridBagConstraints);
 
+        cekPrima.setBackground(new java.awt.Color(204, 204, 0));
         cekPrima.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         cekPrima.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -155,6 +160,7 @@ public class CekNomorView extends javax.swing.JFrame {
         jPanel2.add(cekPrima, gridBagConstraints);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Bilangan :");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
